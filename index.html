@@ -1,0 +1,51 @@
+<hml>
+    <head>
+        <title> Pruebas Cun</title>
+        <script type = "text/javascript" src = "scripts.js"></script>
+    </head>    
+    <body onload="setup()">
+        <h1>CUN</h1>        
+        
+            <h2>Punto 1: Escalera menor a mayor.</h2>
+            <label for = "input1">Altura: </label>
+            <input type = "number" id = "input1">
+            <input type = "submit" onclick = "p1(); return false;">
+                
+            <h2>Punto 2: Escalera Inversa</h2>
+            <label for = "input2">Altura: </label>
+            <input type = "number" id = "input2">
+            <input type = "submit" onclick = "p2(); return false;">
+
+            <h2>Punto 3: Escalera Numérica</h2>
+            <label for = "input3">Tope</label>
+            <input type = "number" id = "input3">
+            <input type = "submit" onclick = "p3(); return false;">
+
+            <h2>Punto 4: Area de figuras.</h2>
+            <select id = "figuras" onclick="p4();return false;">
+                <option value = "1">circulo</option>
+                <option value = "2">cuadrado</option>
+                <option value = "3">triangulo</option>
+            </select>            
+
+            <div id = "circulo">
+                <h2>Circulo</h2>
+                <label>Radio: </label>
+                <input type = "number" id = "inputcirculo">
+                <input type = "submit" onclick = "area_circulo(); return false;"> 
+            </div>
+            <div id = "cuadrado">
+                <h2>Cuadrado</h2>
+                <input type = "number" id = "inputcuadrado">
+                <input type = "submit" onclick = "area_cuadrado(); return false;"> 
+            </div>
+            <div id = "triangulo">
+                <h2>Triangulo</h2>
+                <input type = "number" id = "t_base">
+                <input type = "number" id = "t_altura">                
+                <input type = "submit" onclick = "area_triangulo(); return false;"> 
+            </div>
+        
+    </body>
+</hml>
+
